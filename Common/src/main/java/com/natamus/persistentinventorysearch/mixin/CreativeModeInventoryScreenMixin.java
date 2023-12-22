@@ -1,4 +1,4 @@
-package com.natamus.persistentinventorysearch.forge.mixin;
+package com.natamus.persistentinventorysearch.mixin;
 
 import net.minecraft.client.gui.components.EditBox;
 import net.minecraft.client.gui.screens.inventory.CreativeModeInventoryScreen;
@@ -20,7 +20,7 @@ public abstract class CreativeModeInventoryScreenMixin {
 
 	@Inject(method = "init()V", at = @At(value = "TAIL"))
 	private void CreativeModeInventoryScreen_init(CallbackInfo ci) {
-		if (CreativeModeTab.TABS[selectedTab].hasSearchBar()) {
+		if (CreativeModeTab.TABS[selectedTab].equals(CreativeModeTab.TAB_SEARCH)) {
 			if (!searchQuery.equals("")) {
 				searchBox.setValue(searchQuery);
 				refreshSearchResults();
@@ -37,7 +37,7 @@ public abstract class CreativeModeInventoryScreenMixin {
 
 	@Inject(method = "selectTab(Lnet/minecraft/world/item/CreativeModeTab;)V", at = @At(value = "INVOKE", target = "Lnet/minecraft/client/gui/screens/inventory/CreativeModeInventoryScreen;refreshSearchResults()V"))
 	private void selectTab(CreativeModeTab p_98561_, CallbackInfo ci) {
-		if (CreativeModeTab.TABS[selectedTab].hasSearchBar()) {
+		if (CreativeModeTab.TABS[selectedTab].equals(CreativeModeTab.TAB_SEARCH)) {
 			if (!searchQuery.equals("")) {
 				searchBox.setValue(searchQuery);
 			}
