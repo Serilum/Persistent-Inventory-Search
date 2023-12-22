@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "persistentinventorysearch",
-  "version": "1.3",
+  "version": "1.4",
 
   "name": "Persistent Inventory Search",
   "description": "Makes search queries inside the creative inventory persistent, even after switching tabs and closing the inventory.",
@@ -18,7 +18,7 @@
   "environment": "*",
   "entrypoints": { "main": [ "com.natamus.persistentinventorysearch.ModFabric" ] },
   "mixins": [
-    "persistentinventorysearch_fabric.mixins.json"
+    "persistentinventorysearch.mixins.json"
   ],
 
   "depends": {
@@ -26,7 +26,7 @@
     "fabric": "*",
     "minecraft": ">=1.20",
     "java": ">=17",
-    "collective": ">=7.21"
+    "collective": ">=7.26"
   },
 
   "custom": {

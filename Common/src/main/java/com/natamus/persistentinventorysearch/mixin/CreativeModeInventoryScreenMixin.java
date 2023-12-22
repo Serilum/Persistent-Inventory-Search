@@ -1,4 +1,4 @@
-package com.natamus.persistentinventorysearch.fabric.mixin;
+package com.natamus.persistentinventorysearch.mixin;
 
 import net.minecraft.client.gui.components.EditBox;
 import net.minecraft.client.gui.screens.inventory.CreativeModeInventoryScreen;
