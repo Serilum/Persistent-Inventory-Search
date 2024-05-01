@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "persistentinventorysearch",
+  "version": "1.4",
+
+  "name": "Persistent Inventory Search",
+  "description": "Makes search queries inside the creative inventory persistent, even after switching tabs and closing the inventory.",
+  "authors": [ "Rick South" ],
+  "contact": {
+    "homepage": "https://serilum.com/mod/persistent-inventory-search",
+    "sources": "https://github.com/Serilum/Persistent-Inventory-Search",
+    "issues": "https://github.com/Serilum/.issue-tracker/labels/Mod:%20Persistent%20Inventory%20Search"
+  },
+
+  "license": "All Right Reserved",
+  "icon": "icon.png",
+
+  "environment": "*",
+  "entrypoints": { "main": [ "com.natamus.persistentinventorysearch.ModFabric" ] },
+  "mixins": [
+    "persistentinventorysearch.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.15.0",
+    "fabric": "*",
+    "minecraft": ">=1.20",
+    "java": ">=21",
+    "collective": ">=7.54"
+  },
+
+  "custom": {
+    "modmenu": {
+      "links": {
+        "Donate <3" : "https://ricksouth.com/donate"
+      }
+    }
+  },
+
+  "contributors": [
+	  " ",
+	  "Thank you very much to my Membership sponsors for supporting the development of this mod!",
+	  " ",
+	  "If you would like to contribute too, check out https://serilum.com/donate.",
+	  " ",
+	  "Membership sponsors:",
+	  " Alister",
+	  " Andrean Olgo",
+	  " aternosorg",
+	  " BirdieMiner",
+	  " Cherriesaurus",
+	  " Jack",
+	  " Jeremy Langford",
+	  " Michael W. S.",
+	  " pepe1191",
+	  " Shana Gitnick",
+	  " Tyler Behl"
+  ]
+}
