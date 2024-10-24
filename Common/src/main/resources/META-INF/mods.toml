@@ -1,0 +1,34 @@
+modLoader="javafml"
+loaderVersion="*"
+license="All rights reserved"
+issueTrackerURL="https://github.com/Serilum/.issue-tracker/labels/Mod:%20Persistent%20Inventory%20Search"
+logoFile="icon.png"
+
+[[mods]]
+modId="persistentinventorysearch"
+version="1.5"
+displayName="Persistent Inventory Search"
+displayURL="https://serilum.com/mod/persistent-inventory-search"
+authors="Rick South"
+description='''Makes search queries inside the creative inventory persistent, even after switching tabs and closing the inventory.
+'''
+credits='''Thank you very much to my Membership sponsors for supporting the development of this mod:  
+
+Alister, Andrean Olgo, aternosorg, Cherriesaurus, kate1073, Michael W. S., Tyler Behl, XAgent   
+
+If you would like to contribute too, check out https://serilum.com/donate. Appreciate it! <3   
+'''
+
+[[dependencies.persistentinventorysearch]]
+    modId="collective"
+    mandatory=true
+    versionRange="[7.86,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.persistentinventorysearch]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.21.2,1.21.3]"
+    ordering="NONE"
+    side="BOTH"
