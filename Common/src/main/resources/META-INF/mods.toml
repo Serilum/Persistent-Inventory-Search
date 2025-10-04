@@ -6,7 +6,7 @@ logoFile="icon.png"
 
 [[mods]]
 modId="persistentinventorysearch"
-version="1.5"
+version="1.6"
 displayName="Persistent Inventory Search"
 displayURL="https://serilum.com/mod/persistent-inventory-search"
 authors="Rick South"
@@ -22,7 +22,7 @@ If you would like to contribute too, check out https://serilum.com/donate. Appre
 [[dependencies.persistentinventorysearch]]
     modId="collective"
     mandatory=true
-    versionRange="[8.7,)"
+    versionRange="[8.8,)"
     ordering="NONE"
     side="BOTH"
 
