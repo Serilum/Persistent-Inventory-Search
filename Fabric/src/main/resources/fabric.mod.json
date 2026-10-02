@@ -1,22 +1,22 @@
 {
   "schemaVersion": 1,
   "id": "persistentinventorysearch",
-  "version": "1.5",
+  "version": "1.7",
 
   "name": "Persistent Inventory Search",
   "description": "Makes search queries inside the creative inventory persistent, even after switching tabs and closing the inventory.",
-  "authors": [ "Rick South" ],
+  "authors": [ "Serilum" ],
   "contact": {
     "homepage": "https://serilum.com/mod/persistent-inventory-search",
     "sources": "https://github.com/Serilum/Persistent-Inventory-Search",
     "issues": "https://github.com/Serilum/.issue-tracker/labels/Mod:%20Persistent%20Inventory%20Search"
   },
 
-  "license": "All Right Reserved",
+  "license": "All Rights Reserved",
   "icon": "icon.png",
 
   "environment": "*",
-  "entrypoints": { "main": [ "com.natamus.persistentinventorysearch.ModFabric" ] },
+  "entrypoints": { "main": [ "com.serilum.persistentinventorysearch.ModFabric" ] },
   "mixins": [
     "persistentinventorysearch.mixins.json"
   ],
@@ -26,13 +26,13 @@
     "fabric": "*",
     "minecraft": ">=1.20",
     "java": ">=17",
-    "collective": ">=7.78"
+    "collective": ">=8.40"
   },
 
   "custom": {
     "modmenu": {
       "links": {
-        "Donate <3" : "https://ricksouth.com/donate"
+        "Donate <3" : "https://serilum.com/donate"
       }
     }
   },
@@ -41,16 +41,15 @@
 	  " ",
 	  "Thank you very much to my Membership sponsors for supporting the development of this mod!",
 	  " ",
-	  "If you would like to contribute too, check out https://serilum.com/donate.",
+	  "If you would like to contribute too, check out https://serilum.com/donate",
 	  " ",
 	  "Membership sponsors:",
-	  " Alister",
 	  " Andrean Olgo",
+	  " AnyankaT",
 	  " aternosorg",
 	  " Cherriesaurus",
-	  " Michael W. S.",
-	  " Nahuel Fernandez",
-	  " Shana Gitnick",
+	  " Linda Jansen",
+	  " MWS",
 	  " Tyler Behl"
   ]
 }
